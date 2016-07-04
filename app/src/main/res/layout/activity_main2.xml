@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fanfan.feicui.mywidget.activity.Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#2671e1">
+
+        <TextView
+            android:padding="4dp"
+            android:text="城市"
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            />
+        <ImageView
+            android:layout_margin="4dp"
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_city_name"
+            />
+        <TextView
+            android:text="风向"
+            android:id="@+id/tv_direct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@+id/imageView"
+            />
+        <TextView
+            android:text="风级"
+            android:id="@+id/tv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/tv_direct"
+            android:layout_alignRight="@+id/tv_city_name"
+            android:layout_alignEnd="@+id/tv_city_name"/>
+        <TextView
+            android:text="周"
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/tv_date"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:text="温度"
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/tv_power"
+            android:layout_alignBottom="@+id/tv_power"
+            android:layout_alignLeft="@+id/tv_date"
+            android:layout_alignStart="@+id/tv_date"/>
+
+        <TextView
+            android:text="湿度"
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/tv_temperature"
+            android:layout_toLeftOf="@+id/tv_week"
+            android:layout_toStartOf="@+id/tv_week"/>
+
+        <TextView
+            android:text="日期"
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_week"
+            android:layout_toStartOf="@+id/tv_week"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"/>
+
+        <TextView
+            android:text="农历"
+            android:id="@+id/tv_moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/tv_weather"
+            android:layout_alignRight="@+id/tv_date"
+            android:layout_alignEnd="@+id/tv_date"/>
+
+        <TextView
+            android:text="时间"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_alignBottom="@+id/tv_moon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:text="sx"
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="a"
+            android:id="@+id/tv_cur_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:text="下午"
+            android:id="@+id/tv_pm25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_quality"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:text="下午"
+            android:id="@+id/tv_pm10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pm25"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:text="空气质量"
+            android:id="@+id/tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cur_pm"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:text="时间"
+            android:id="@+id/tv_data_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="5dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:text="b"
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_data_time"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_life"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
